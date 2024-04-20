@@ -53,7 +53,7 @@ const Login = () => {
           <Toaster />
           <div className="mb-2 flex justify-center">
             <img
-              src="https://res.cloudinary.com/photo-manager/image/upload/v1713638148/gmfnacjt5ktarrpycp7u.svg"
+              src={import.meta.env.VITE_APP_LOGO}
               className="w-32 py-5"
               draggable="false"
             />
