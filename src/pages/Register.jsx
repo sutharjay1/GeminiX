@@ -56,8 +56,9 @@ const Register = () => {
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
           <div className="mb-2 flex justify-center">
             <img
-              src="../../public/GeminiX.svg"
+              src="https://res.cloudinary.com/photo-manager/image/upload/v1713638148/gmfnacjt5ktarrpycp7u.svg"
               className="w-32 py-5"
+              draggable="false"
             />
           </div>
           <h2 className="text-center text-2xl font-bold leading-tight text-zinc-400">
