@@ -133,7 +133,7 @@ const InputDiv = () => {
 
             <div className="w-full flex items-start justify -start">
               <span className="p-2">
-                <BsStars className="text-2xl md:text-3xl " />
+                <BsStars className="text-2xl md:text-3xl bg-gradient-to-r from-purple-900 via-purple-500 to-rose-500" />
               </span>
 
               <MarkdownPreview
