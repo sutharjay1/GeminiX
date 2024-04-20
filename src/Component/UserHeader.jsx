@@ -33,11 +33,11 @@ const UserHeader = ({ className }) => {
   return (
     <>
       <div
-        className={`absolute top-0 right-0 w-full flex items-center justify-between py-4 px-4 md:px-28 ${
-          user ? 'pt-2 ' : 'pt-4'
+        className={`absolute top-2 right-0 w-full flex items-center justify-between py-4 px-4 md:px-28 ${
+          user ? 'pt-2' : 'pt-4'
         } ${className} md:pt-2`}
       >
-        <Link to={`/d/${user?.username}`}>
+        <Link to={`${user ? `/d/${user?.username}` : '/'}`}>
           <span className="text-2xl text-zinc-300  font-semibold select-none">
             GeminiX
           </span>

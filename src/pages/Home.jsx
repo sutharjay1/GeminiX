@@ -1,8 +1,14 @@
 import React from 'react';
 import UserHeader from './../Component/UserHeader';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigateUser = () => {
+    navigate('/login');
+  };
+
   return (
     <>
       <div className="w-full h-screen flex flex-col items-center justify-center m-0">
@@ -10,10 +16,12 @@ const Home = () => {
           <div className="w-fit ">
             <UserHeader className="top-3" />
           </div>
-          <div className="w-fit py-4">
-            <span className="text-lg rounded-md bg-[#2a2b2c] px-4 py-2">
-              <Link to="/login">Sign in</Link>
-            </span>
+          <div className="w-fit py-4 z-40">
+            <Link to="/login">
+              <span className="text-lg rounded-md bg-[#2a2b2c] px-4 py-2">
+                Sign in
+              </span>
+            </Link>
           </div>
         </div>
 
