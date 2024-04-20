@@ -131,7 +131,7 @@ const InputDiv = () => {
               <span className="text-lg"> {data?.prompt}</span>
             </div>
 
-            <div className="w-full flex items-start justify -start">
+            <div className="w-full flex items-start justify-start">
               <span className="p-2 ">
                 <BsStars className="text-2xl md:text-3xl text-rose-500" />
               </span>
@@ -143,7 +143,7 @@ const InputDiv = () => {
                   borderRadius: 8,
                   backgroundColor: '#131314',
                 }}
-                className="rounded-md pt-0 px-2 py-2 md:px-2 md:py-1"
+                className="w-full rounded-md pt-0 px-2 py-2 md:px-2 md:py-1 overflow-x-scroll"
               />
             </div>
           </div>
@@ -166,7 +166,7 @@ const InputDiv = () => {
         )}
         {userPrompt?.length < 1 && isFetching && (
           <>
-            <div className="w-full flex flex-col items-start justify-start gap-3 px-[0.375rem] pt-6">
+            <div className="w-full flex flex-col items-start justify-start gap-3  px-[0.375rem] pt-6">
               <div className="w-full flex items-start justify-start gap-3">
                 <UserAvatar />
                 <span className="text-lg"> {prompt}</span>
