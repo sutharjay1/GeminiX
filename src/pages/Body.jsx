@@ -40,8 +40,8 @@ const Body = () => {
   return (
     <>
       <div className="relative w-full h-screen flex flex-col items-center justify-center ">
-        <Tooltip id="tooltip" />
         <Toaster />
+        <Tooltip id="tooltip" />
         <div className="w-full h-fit flex items-center justify-center pb-16 md:pb-0">
           <UserHeader />
         </div>
