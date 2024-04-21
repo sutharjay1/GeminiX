@@ -24,7 +24,7 @@ const UserHeader = ({ className }) => {
   const handleSignOut = () => {
     dispatch(setUser(null));
     dispatch(setUserSuggestion(null));
-    dispatch(setUserPrompt(null));
+    dispatch(setUserPrompt([]));
     removeCookie('token');
     document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
     navigate('/login');
