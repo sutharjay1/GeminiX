@@ -143,7 +143,7 @@ const InputDiv = () => {
                   borderRadius: 8,
                   backgroundColor: '#131314',
                 }}
-                className="w-full rounded-md pt-0 px-2 py-2 md:px-2 md:py-1 overflow-x-scroll"
+                className="w-full rounded-md pt-0 px-2 py-2 md:px-2 md:py-1 overflow-x-scroll "
               />
             </div>
           </div>

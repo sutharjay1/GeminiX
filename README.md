@@ -12,7 +12,7 @@ GeminiX is a clone of Google Gemini, a web application that provides users with 
 
 ## Demo
 
-[GeminiX](https://gemini-x-eight.vercel.app)
+[GeminiX](https://geminixai.vercel.app)
 
 ## Features
 
