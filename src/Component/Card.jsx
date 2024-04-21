@@ -6,10 +6,13 @@ const Card = () => {
   const dispatch = useDispatch();
   const userPrompts = useSelector((state) => state?.user?.user?.prompts);
 
-  const newPromptArray = [...userPrompts]?.reverse().slice(0, 4); // Limit to 4 prompts
+  const newPromptArray = [...userPrompts]?.reverse().slice(0, 4);
 
   const handleClickedSuggestion = (prompt) => {
     dispatch(setUserSuggestion(prompt));
+    setTimeout(() => {
+      dispatch(setUserSuggestion(''));
+    }, 5000);
   };
 
   return (
