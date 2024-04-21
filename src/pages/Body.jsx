@@ -13,6 +13,7 @@ import {
   setUserSuggestion,
 } from '../store/userSlice.js';
 import UserHeader from '../Component/UserHeader.jsx';
+import FloatingUI from '../Component/FloatingUI.jsx';
 
 const Body = () => {
   const dispatch = useDispatch();

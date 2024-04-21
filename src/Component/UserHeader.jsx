@@ -33,8 +33,8 @@ const UserHeader = ({ className }) => {
   return (
     <>
       <div
-        className={`absolute top-2 right-0 w-full flex items-center justify-between py-4 px-4 md:px-28 ${
-          user ? 'pt-2' : 'pt-4'
+        className={`absolute top-2   right-0 w-full flex items-center justify-between py-4 px-4 z-40 ${
+          user ? 'pt-2 md:px-28' : 'pt-4 md:px-20'
         } ${className} md:pt-2`}
       >
         <Link to={`${user ? `/d/${user?.username}` : '/'}`}>
@@ -42,7 +42,21 @@ const UserHeader = ({ className }) => {
             GeminiX
           </span>
         </Link>
+
         <div className="flex items-center justify-center gap-4">
+          {!user && (
+            <>
+              <div className="w-fit flex items-center justify-center py-4 z-40 md:pt-2">
+                <Link to="/login">
+                  {!user && (
+                    <span className="text-lg rounded-md text-zinc-900  bg-[#8ab4f8] b px-4 py-2 ">
+                      Sign in
+                    </span>
+                  )}
+                </Link>
+              </div>
+            </>
+          )}
           <span
             className={`text-2xl  text-zinc-300 ${
               user ? 'flex' : 'hidden'

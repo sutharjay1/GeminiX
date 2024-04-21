@@ -66,7 +66,7 @@ const InputDiv = () => {
   };
 
   return (
-    <div className="relative max-w-5xl w-full h-[calc(100vh-6rem)] flex  flex-col items-center justify-center text-zinc-300">
+    <div className="relative max-w-5xl w-full h-[calc(100vh-6rem)] flex  flex-col items-center justify-center text-zinc-300 ">
       <Tooltip id="tooltip" />
       <Toaster />
 

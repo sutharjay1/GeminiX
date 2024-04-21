@@ -7,6 +7,8 @@ import { toast, Toaster } from 'react-hot-toast';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUser } from '../store/userSlice.js';
 import { useCookies } from 'react-cookie';
+import FloatingUI from '../Component/FloatingUI.jsx';
+import UserHeader from '../Component/UserHeader.jsx';
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -51,7 +53,8 @@ const Register = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+      <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24 z-40">
+        <UserHeader />
         <Toaster />
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
           <div className="mb-2 flex justify-center">
@@ -163,6 +166,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <FloatingUI />
     </>
   );
 };

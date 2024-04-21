@@ -2,6 +2,7 @@ import React from 'react';
 import UserHeader from './../Component/UserHeader';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import FloatingCurve from '../Component/FloatingCurve';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -16,22 +17,13 @@ const Home = () => {
       <div className="w-full h-screen flex flex-col items-center justify-center m-0 bg-[#131314]">
         <div className="w-full flex items-center justify-between px-10 md:px-20 py-4 ">
           <div className="w-fit ">
-            <UserHeader className="top-3" />
-          </div>
-          <div className="w-fit py-4 z-40 md:mt-0">
-            <Link to="/login">
-              {!user && (
-                <span className="text-lg rounded-md text-zinc-900  bg-[#8ab4f8] b px-4 py-2 ">
-                  Sign in
-                </span>
-              )}
-            </Link>
+            <UserHeader />
           </div>
         </div>
 
-        <div className="w-full max-w-7xl h-full  flex items-center justify-center">
-          <div className="w-full min-h-[40rem] my-12    grid grid-cols-1 md:grid-cols-2      ">
-            <div className="w-full h-full flex flex-col items-center justify-center   ">
+        <div className=" relative w-full max-w-7xl h-full  flex items-center justify-center">
+          <div className="w-full min-h-[40rem] my-12  flex items-center justify-center  md:grid md:grid-cols-2      ">
+            <div className="w-full h-full flex flex-col items-center justify-center  z-50 ">
               <div className="relative w-full h-auto flex items-center justify-start px-5 md:px-0 ">
                 <img
                   src={import.meta.env.VITE_APP_LOGO}
@@ -49,23 +41,18 @@ const Home = () => {
                 Chat to start writing, planning, learning and more with Google
                 AI
               </span>
-              <div className="w-fit flex items-start justify-start place-self-start">
+              <div className="w-fit flex items-start justify-start place-self-start px-6 md:px-2">
                 <Link to="/login">
                   {!user && (
-                    <span className="text-lg text-zinc-900 rounded-full bg-[#8ab4f8] px-5 py-3 ">
+                    <span className="text-lg text-zinc-900 rounded-full bg-[#8ab4f8]  cursor-pointer  px-5 py-3 ">
                       Sign in
                     </span>
                   )}
                 </Link>
               </div>
             </div>
-            <div className="w-full h-full flex items-center justify-center ">
-              <img
-                src={import.meta.env.VITE_APP_LOGO}
-                className="w-96 h-96 select-none"
-                draggable="false"
-              />
-            </div>
+
+           <FloatingCurve />
           </div>
         </div>
       </div>

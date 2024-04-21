@@ -9,6 +9,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setUser } from '../store/userSlice.js';
 import { useCookies } from 'react-cookie';
 import UserHeader from '../Component/UserHeader.jsx';
+import FloatingCurve from '../Component/FloatingCurve.jsx';
+import FloatingUI from '../Component/FloatingUI.jsx';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -47,7 +49,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24 text-zinc-300">
+      <div className="w-full flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24 text-zinc-300 z-40">
         <UserHeader />
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
           <Toaster />
@@ -65,7 +67,7 @@ const Login = () => {
             Don&apos;t have an account?{' '}
             <Link
               to={'/register'}
-              className="font-medium text-zinc-500 transition-all duration-200 hover:underline"
+              className="font-medium text-zinc-400 transition-all duration-200 hover:underline"
             >
               Create a free account
             </Link>
@@ -146,6 +148,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <FloatingUI />
     </>
   );
 };
