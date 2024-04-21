@@ -40,7 +40,7 @@ const Register = () => {
         setCookie('token', res?.data?.token, { path: '/' });
         dispatch(setUser(res?.data?.user));
         toast.success(res?.data?.message);
-        if (user) navigate(`/d/${user?.username}`);
+        if (user) navigate(`/d/${res?.data?.user?.username}`);
       })
       .catch((err) => {
         toast.error(err?.response?.data?.message);
