@@ -21,7 +21,7 @@ const History = () => {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center justify-center px-2 py-2 mb-9 pt-24 md:pt-20 ">
+      <div className="w-full h-screen flex flex-col items-center justify-center px-2 py-2 mb-9 pt-28 md:pt-28 ">
         <Tooltip id="tooltip" />
         <div className="w-full pl-28">
           <UserHeader />
