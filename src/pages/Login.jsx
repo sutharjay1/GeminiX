@@ -56,7 +56,7 @@ const Login = () => {
           <div className="mb-2 flex justify-center">
             <img
               src={import.meta.env.VITE_APP_LOGO}
-              className="w-32 py-5"
+              className="w-48 md:w-52 py-5"
               draggable="false"
             />
           </div>

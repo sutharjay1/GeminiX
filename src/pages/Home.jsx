@@ -21,23 +21,20 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" relative w-full max-w-7xl h-full  flex items-center justify-center">
-          <div className="w-full min-h-[40rem] my-12  flex items-center justify-center  md:grid md:grid-cols-2      ">
-            <div className="w-full h-full flex flex-col items-center justify-center  z-50 ">
+        <div className=" relative w-full max-w-7xl h-full  flex items-center justify-start">
+          <div className="w-full min-h-[40rem] my-12  flex items-center justify-start  md:grid md:grid-cols-2      ">
+            <div className="w-full h-full flex flex-col items-center justify-center  z-50">
               <div className="relative w-full h-auto flex items-center justify-start px-5 md:px-0 ">
                 <img
                   src={import.meta.env.VITE_APP_LOGO}
-                  className="absolute bottom-8 sm:bottom-9 md:bottom-11 -left-11 sm:-left-[20.5rem] md:-left-[19rem] right-0 sm:right-0 md:right-0 mx-auto w-16 md:w-14  py-5 select-none"
+                  className="flex items-center justify-start w-72 md:w-96 md:px-2 py-5 select-none"
                   draggable="false"
                 />
-                <span className="h-fit text-6xl md:text-7xl py-1 font-bold bg-gradient-to-r from-purple-900 via-purple-500 to-rose-500 selection:text-[#9e9e9e47] bg-clip-text text-transparent capitalize tracking-wide">
-                  GeminiX
-                </span>
               </div>
-              <span className="w-[75%] text-xl md:text-2xl place-self-start px-6 md:px-2 font-semibold mb-5 mt-1">
+              <span className="w-[90%] md:w-[75%] text-xl md:text-2xl place-self-start px-6 md:px-2 font-semibold mb-5 mt-1">
                 Supercharge your creativity and productivity
               </span>
-              <span className="w-[75%] text-base place-self-start px-6 md:px-2 font-normal mb-8">
+              <span className="w-[90%] md:w-[75%] text-base place-self-start px-6 md:px-2 font-normal mb-8">
                 Chat to start writing, planning, learning and more with Google
                 AI
               </span>
@@ -52,7 +49,7 @@ const Home = () => {
               </div>
             </div>
 
-           <FloatingCurve />
+            <FloatingCurve />
           </div>
         </div>
       </div>
