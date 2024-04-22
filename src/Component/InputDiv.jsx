@@ -116,7 +116,7 @@ const InputDiv = () => {
         {!isFetching && userPrompt?.length === 0 && (
           <div className="w-full h-full flex flex-col items-center justify-start space-y-2">
             <div className="w-full h-fit flex flex-col items-start md:space-y-2 justify-start md:py-10 mx-auto px-4 md:px-5 pt-0">
-              <span className="h-fit text-4xl md:text-5xl py-[0.375rem] font-semibold bg-gradient-to-r from-purple-900 via-purple-500 to-rose-500 selection:text-[#9e9e9e47] bg-clip-text text-transparent capitalize ">{`Hello, ${username}`}</span>
+              <span className="h-fit text-4xl md:text-5xl py-[0.375rem] font-semibold bg-gradient-to-r from-[#5780ea] via-[#a370be] to-[#d36678] selection:text-[#9e9e9e47] bg-clip-text text-transparent capitalize ">{`Hello, ${username}`}</span>
               <span className="text-4xl md:text-5xl font-semibold text-[#444746] bg-clip-text selection:text-[#8d9391]">{`How can I help you today?`}</span>
             </div>
             <div className="w-full h-fit p-5 flex items-center justify-start my-9 overflow-x-auto md:overflow-hidden">
