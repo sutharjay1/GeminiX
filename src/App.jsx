@@ -89,7 +89,7 @@ const AppRouter = () => {
         element={<Register />}
       />
       <Route
-        path={`/d/${user?.username}`}
+        path={`/d/:username`}
         element={<Body />}
       />
       <Route
